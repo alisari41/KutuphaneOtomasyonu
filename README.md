@@ -1,2 +1,2 @@
-# KutuphaneOtomasyonu
+# Kütüphane Otomasyonu
 Katmanlı mimari
