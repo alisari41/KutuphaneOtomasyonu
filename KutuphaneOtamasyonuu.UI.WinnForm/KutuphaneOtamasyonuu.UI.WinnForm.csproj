@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9638AD4E-4EAC-4DF2-894C-CCC7DFD3ADD6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KutuphaneOtamasyonuu.UI.WinnForm</RootNamespace>
+    <AssemblyName>KutuphaneOtamasyonuu.UI.WinnForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.37.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.37\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\zedgraph_dll_v515\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kalmayankitaplarogrencilistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kalmayankitaplarogrencilistesi.Designer.cs">
+      <DependentUpon>kalmayankitaplarogrencilistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitabıteslimalanidaeedenlerinlistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitabıteslimalanidaeedenlerinlistesi.Designer.cs">
+      <DependentUpon>Kitabıteslimalanidaeedenlerinlistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapadinagörearama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapadinagörearama.Designer.cs">
+      <DependentUpon>kitapadinagörearama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaparama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaparama.Designer.cs">
+      <DependentUpon>kitaparama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapekleme.Designer.cs">
+      <DependentUpon>kitapekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapguncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapguncelleme.Designer.cs">
+      <DependentUpon>kitapguncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapiade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapiade.Designer.cs">
+      <DependentUpon>kitapiade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaplistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaplistele.Designer.cs">
+      <DependentUpon>kitaplistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapsilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapsilme.Designer.cs">
+      <DependentUpon>kitapsilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapver.Designer.cs">
+      <DependentUpon>kitapver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanicigirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanicigirisi.Designer.cs">
+      <DependentUpon>Kullanicigirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciuyeol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciuyeol.Designer.cs">
+      <DependentUpon>kullaniciuyeol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciekle.Designer.cs">
+      <DependentUpon>ogrenciekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciguncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciguncelleme.Designer.cs">
+      <DependentUpon>ogrenciguncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencikitaplistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrencikitaplistele.Designer.cs">
+      <DependentUpon>ogrencikitaplistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencilistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrencilistele.Designer.cs">
+      <DependentUpon>ogrencilistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencisilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrencisilme.Designer.cs">
+      <DependentUpon>ogrencisilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kalmayankitaplarogrencilistesi.resx">
+      <DependentUpon>kalmayankitaplarogrencilistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitabıteslimalanidaeedenlerinlistesi.resx">
+      <DependentUpon>Kitabıteslimalanidaeedenlerinlistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapadinagörearama.resx">
+      <DependentUpon>kitapadinagörearama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaparama.resx">
+      <DependentUpon>kitaparama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapekleme.resx">
+      <DependentUpon>kitapekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapguncelleme.resx">
+      <DependentUpon>kitapguncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapiade.resx">
+      <DependentUpon>kitapiade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaplistele.resx">
+      <DependentUpon>kitaplistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapsilme.resx">
+      <DependentUpon>kitapsilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapver.resx">
+      <DependentUpon>kitapver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanicigirisi.resx">
+      <DependentUpon>Kullanicigirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciuyeol.resx">
+      <DependentUpon>kullaniciuyeol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciekle.resx">
+      <DependentUpon>ogrenciekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciguncelleme.resx">
+      <DependentUpon>ogrenciguncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrencikitaplistele.resx">
+      <DependentUpon>ogrencikitaplistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrencilistele.resx">
+      <DependentUpon>ogrencilistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrencisilme.resx">
+      <DependentUpon>ogrencisilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapAdetleriGrafikGosterimi.resx">
+      <DependentUpon>KitapAdetleriGrafikGosterimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="KitapAdetleriGrafikGosterimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapAdetleriGrafikGosterimi.Designer.cs">
+      <DependentUpon>KitapAdetleriGrafikGosterimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KutuphaneOtamasyonuu.BLL\KutuphaneOtamasyonuu.BLL.csproj">
+      <Project>{cb58e42f-36ad-4dc0-84e8-2d16b2321306}</Project>
+      <Name>KutuphaneOtamasyonuu.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KutuphaneOtamasyonuu.Entity\KutuphaneOtamasyonuu.Entity.csproj">
+      <Project>{621e0e15-3149-4dcf-9663-ee3990bb5ec0}</Project>
+      <Name>KutuphaneOtamasyonuu.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibraryLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kutuphane6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kutuphane6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kutuphane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitaparama32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitaparama80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitaparama48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\delete_Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitaplistele.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitaplisteme3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitaplistele2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitapkaydet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitapekle30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitapeklemebeyaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitapsavve40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\update_Button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\temizleme30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\new_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kütüphanekitapsil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitapsil30pxsiyah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitapsilrenkli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitapliste4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\kitapiade60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\ogrenciaramasiyah52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\ogrenciarama50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\ogrenciaramarenkli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\new_person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenciekleme2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrencikutuphane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenciekleme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\ogrencisil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\ogrenciguncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\ogrenciguncellerenkli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\ogrencilistelerenkli40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\cikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Menu_Icon\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library_about.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userana.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
