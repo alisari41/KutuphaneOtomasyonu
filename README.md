@@ -36,9 +36,11 @@ Bu katman kullanıcı ile etkileşimin yapıldığı katmandır. Burada temel am
 ![image](https://user-images.githubusercontent.com/81421228/155904302-6f71c9ad-b67c-488a-8247-e728d986a122.png)
 
 - Eğer personel giriş yaptıysa pop-up
+
 ![image](https://user-images.githubusercontent.com/81421228/155904401-546f0108-beaf-41e8-a24f-490fcc5b58ec.png)
 
 - Veya yeni kayıt olduysa
+
 ![image](https://user-images.githubusercontent.com/81421228/155904477-9b45ee7e-47d6-4107-8a26-c82a9eab811a.png)
 
 - Öğrenci Ekleme, Silme, Güncelleme işlemleri yapılmaktadır. Örneğin
